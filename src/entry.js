@@ -11,7 +11,7 @@ const install = function installVueSimpleScrollTrigger(Vue) {
 
   Vue.component('VueSimpleScrollTrigger', component);
 
-  Vue.directive('scroll-trigger', {
+  Vue.directive('simple-scroll-trigger', {
     inserted: function (el, binding, vnode) {
       ScrollTrigger.create({
         trigger: (binding.value.trigger !== undefined) ? binding.value.trigger : el,

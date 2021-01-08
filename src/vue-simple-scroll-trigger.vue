@@ -1,5 +1,5 @@
 <template>
-  <div v-scroll-trigger="{ start, end, onEnter, onLeave }"></div>
+  <div v-simple-scroll-trigger="{ start, end, toggleClass, onEnter, onLeave }"></div>
 </template>
 
 <script>
