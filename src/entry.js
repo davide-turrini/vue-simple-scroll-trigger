@@ -9,7 +9,7 @@ const install = function installVueSimpleScrollTrigger(Vue) {
   if (install.installed) return;
   install.installed = true;
 
-  Vue.component('VueSimpleScrollTrigger', component);
+  Vue.component('v-simple-scroll-trigger', component);
 
   Vue.directive('simple-scroll-trigger', {
     inserted: function (el, binding, vnode) {
