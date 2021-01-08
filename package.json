@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-scroll-trigger",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple scroll trigger (gsap based) for vue.js",
   "author": "davide-turrini",
   "license": "MIT",
