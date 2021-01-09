@@ -24,7 +24,7 @@ new Vue({
 }).$mount('#app');
 ```
 
-or without plugin initialization... 
+or <b>without plugin initialization</b>... 
 
 ```vue
 <template>
@@ -32,7 +32,7 @@ or without plugin initialization...
 </template>
 
 <script>
-import { VSimpleScrollTrigger } from 'vue-simple-scroll-trigger';
+import VSimpleScrollTrigger from 'vue-simple-scroll-trigger';
 
 export default { 
   component: {
@@ -42,12 +42,22 @@ export default {
 </script>
 ```
 
-or using the directive 
+or using the <b>directive</b> 
+(note: if you dont install the plugin you ll need to import the directive and bind it to your component)
 
 ```vue
 <template>
   <div v-simple-scroll-trigger="{ start, end, toggleClass, onEnter, onLeave }"></div>
 </template>
+
+<script>
+import { SimpleScrollTriggerDirective } from 'vue-simple-scroll-trigger';
+
+export default { 
+  directives: [ SimpleScrollTriggerDirective ]
+}
+</script>
+
 ```
 
 
