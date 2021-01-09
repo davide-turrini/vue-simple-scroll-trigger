@@ -54,7 +54,9 @@ or using the <b>directive</b>
 import { SimpleScrollTriggerDirective } from 'vue-simple-scroll-trigger';
 
 export default { 
-  directives: [ SimpleScrollTriggerDirective ]
+    directives: {
+      'simple-scroll-trigger': SimpleScrollTriggerDirective
+    }
 }
 </script>
 
