@@ -1,11 +1,16 @@
 <template>
-  <div v-simple-scroll-trigger="{ start, end, toggleClass, onEnter, onLeave }"></div>
+  <div v-simple-scroll-trigger="{ start, end, onEnter, onLeave }"></div>
 </template>
 
 <script>
 
+  import directive from './directive'
+
   export default {
     name: 'v-simple-scroll-trigger',
+    directives: {
+      'simple-scroll-trigger': directive
+    },
     props: {
       start: {
         type: String,
