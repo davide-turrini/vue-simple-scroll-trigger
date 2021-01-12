@@ -33,7 +33,7 @@
         default: null
       },
       scroller: {
-        default: document.body
+        default: () => document.body
       }
     }
   }
