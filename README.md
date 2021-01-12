@@ -47,7 +47,7 @@ or using the <b>directive</b>
 
 ```vue
 <template>
-  <div v-simple-scroll-trigger="{ start, end, toggleClass, onEnter, onLeave }"></div>
+  <div v-simple-scroll-trigger="{ start, end, toggleClass, onEnter, onLeave, scroller }"></div>
 </template>
 
 <script>
@@ -82,7 +82,8 @@ Since this component is simply a wrapper of Scroll Trigger i would suggest you t
 - ### onLeave <h6>for both originals 'onLeave' 'onLeaveBack' callbacks </h6>
   -  type: `Function`, 
   -  default: `null`
-  
+- ### scroller
+  -  default: document.body 
  
 ## License
 

@@ -1,5 +1,5 @@
 <template>
-  <div v-simple-scroll-trigger="{ start, end, onEnter, onLeave }"></div>
+  <div v-simple-scroll-trigger="{ start, end, onEnter, onLeave, scroller }"></div>
 </template>
 
 <script>
@@ -31,6 +31,9 @@
       onLeave: {
         type: Function,
         default: null
+      },
+      scroller: {
+        default: document.body
       }
     }
   }
