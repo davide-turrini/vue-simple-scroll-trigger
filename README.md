@@ -35,7 +35,7 @@ or <b>without plugin initialization</b>...
 import VSimpleScrollTrigger from 'vue-simple-scroll-trigger';
 
 export default { 
-  component: {
+  components: {
     VSimpleScrollTrigger
   }
 }
